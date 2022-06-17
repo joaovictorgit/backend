@@ -1,6 +1,6 @@
 'use strict'
 import express from 'express'
-import routes from '../backend/src/routes'
+import routes from './src/routes/index.js';
 import swaggerJSDoc from 'swagger-jsdoc'
 import swaggerUi from 'swagger-ui-express'
 import dotenv from 'dotenv'
@@ -8,7 +8,7 @@ import dotenv from 'dotenv'
 dotenv.config({ path: '.env' })
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT ?? 8080
 const swaggerOptions = {
     swaggerDefinition: {
         openapi: '3.0.0',

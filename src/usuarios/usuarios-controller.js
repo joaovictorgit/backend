@@ -2,8 +2,8 @@
 
 import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 class UsuarioController {
 

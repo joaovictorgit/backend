@@ -1,10 +1,10 @@
 'use strict'
 
 import express from 'express'
-import autentificacao from '../middleware/autentificacao'
+import autentificacao from '../middleware/autentificacao.js'
 const router = express.Router()
 
-import ProdutoController from './produtos-controller'
+import ProdutoController from './produtos-controller.js'
 const produtoController = new ProdutoController()
 
 /**
